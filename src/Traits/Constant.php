@@ -47,4 +47,13 @@ trait Constant
         return 0.261497212847642783755426838608695859;
     }
 
+    /**
+     * Returns the value of STEFAN BOLTZMANN constant (kg/s^3/K^4)
+     * @return float
+     */
+    static public function STEFAN_BOLTZMANN(): float
+    {
+        return 5.670367 * pow(10, -8);
+    }
+
 }
