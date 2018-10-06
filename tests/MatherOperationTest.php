@@ -28,4 +28,26 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
 
     }
 
+    /** @test */
+    public function check_if_sub_function_work()
+    {
+
+        $arrayOfNumbers =  [
+            /* Integer */
+            [45, 45, 0],
+            [45, +100, 55],
+
+            /* Float */
+            [0.9, 1, 0.1],
+            [-0.5, 40, 40.5]
+        ];
+
+        foreach ($arrayOfNumbers as $numbers) {
+            $sum = Mather::sub($numbers[1], $numbers[2]);
+
+            $this->assertSame($numbers[0], $sum);
+        }
+
+    }
+
 }
