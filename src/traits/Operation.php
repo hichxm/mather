@@ -45,4 +45,21 @@ trait Operation
         return $value;
     }
 
+    /**
+     * Multiply the numbers between them
+     *
+     * @param float|int ...$numbers
+     * @return float|int
+     */
+    static public function multiply(...$numbers)
+    {
+        $value = array_shift($numbers);
+
+        foreach ($numbers as $number) {
+            $value = $value * $number;
+        }
+
+        return $value;
+    }
+
 }
