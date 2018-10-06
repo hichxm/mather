@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Hichxm\Mather\traits;
+namespace Hichxm\Mather\Traits;
 
 
 /**
  * Trait Shortcut
- * @package Hichxm\Mather\traits
+ * @package Hichxm\Mather\Traits
  */
 trait Shortcut
 {

@@ -4,8 +4,9 @@
 namespace Hichxm\Mather;
 
 
-use Hichxm\Mather\traits\Operation;
-use Hichxm\Mather\traits\Shortcut;
+use Hichxm\Mather\Traits\Operation;
+use Hichxm\Mather\Traits\Shortcut;
+
 
 /**
  * Class Mather

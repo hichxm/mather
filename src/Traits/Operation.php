@@ -1,14 +1,15 @@
 <?php
 
 
-namespace Hichxm\Mather\traits;
+namespace Hichxm\Mather\Traits;
 
 
 use Hichxm\Mather\Exceptions\DivisionByZeroException;
 
+
 /**
  * Trait Operation
- * @package Hichxm\Mather\Operation
+ * @package Hichxm\Mather\Traits
  */
 trait Operation
 {
