@@ -72,4 +72,26 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
 
     }
 
+    /** @test */
+    public function check_if_divide_function_work()
+    {
+
+        $arrayOfNumbers =  [
+            /* Integer */
+            [50, 100, 2],
+            [-20, 40, -2],
+
+            /* Float */
+            [-22.5, 45, -2],
+            [81.4, 814, 10]
+        ];
+
+        foreach ($arrayOfNumbers as $numbers) {
+            $sum = Mather::div($numbers[1], $numbers[2]);
+
+            $this->assertSame($numbers[0], $sum);
+        }
+
+    }
+
 }
