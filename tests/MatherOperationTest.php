@@ -50,4 +50,26 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
 
     }
 
+    /** @test */
+    public function check_if_multiply_function_work()
+    {
+
+        $arrayOfNumbers =  [
+            /* Integer */
+            [25, 5, 5],
+            [0, 800, 0],
+
+            /* Float */
+            [409.5, 45.5, 9],
+            [-366.4, 45.8, -8]
+        ];
+
+        foreach ($arrayOfNumbers as $numbers) {
+            $sum = Mather::multiply($numbers[1], $numbers[2]);
+
+            $this->assertSame($numbers[0], $sum);
+        }
+
+    }
+
 }
