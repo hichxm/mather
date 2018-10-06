@@ -17,9 +17,9 @@ trait Operation
      * @param float|int ...$numbers
      * @return float|int
      */
-    static public function sum(...$numbers)
+    static public function total(...$numbers)
     {
-        $value = null;
+        $value = array_shift($numbers);
 
         foreach ($numbers as $number) {
             $value += $number;
@@ -34,7 +34,7 @@ trait Operation
      * @param float|int ...$numbers
      * @return float|int
      */
-    static public function sub(...$numbers)
+    static public function subtract(...$numbers)
     {
         $value = array_shift($numbers);
 
