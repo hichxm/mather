@@ -4,6 +4,8 @@
 namespace Hichxm\Mather\traits;
 
 
+use Hichxm\Mather\Exceptions\DivisionByZeroException;
+
 /**
  * Trait Operation
  * @package Hichxm\Mather\Operation
@@ -68,9 +70,14 @@ trait Operation
      * @param float|int $a
      * @param float|int $b
      * @return float|int
+     * @throws DivisionByZeroException
      */
     static public function divide($a, $b)
     {
+        if ($b == 0) {
+            throw new DivisionByZeroException();
+        }
+
         return $a / $b;
     }
 

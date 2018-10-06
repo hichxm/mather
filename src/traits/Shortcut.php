@@ -46,6 +46,7 @@ trait Shortcut
      * @param float|int $a
      * @param float|int $b
      * @return float|int
+     * @throws \Hichxm\Mather\Exceptions\DivisionByZeroException
      */
     static public function div($a, $b)
     {
