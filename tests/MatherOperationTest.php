@@ -65,7 +65,7 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
         ];
 
         foreach ($arrayOfNumbers as $numbers) {
-            $sum = Mather::multiply($numbers[1], $numbers[2]);
+            $sum = Mather::mul($numbers[1], $numbers[2]);
 
             $this->assertSame($numbers[0], $sum);
         }

@@ -31,4 +31,14 @@ trait Shortcut
         return Operation::subtract(...$numbers);
     }
 
+    /**
+     * @see Operation::multiply()
+     * @param float|int ...$numbers
+     * @return float|int
+     */
+    static public function mul(...$numbers)
+    {
+        return Operation::multiply(...$numbers);
+    }
+
 }
