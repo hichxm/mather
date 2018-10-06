@@ -28,4 +28,21 @@ trait Operation
         return $value;
     }
 
+    /**
+     * Sum all the numbers between them
+     *
+     * @param float|int ...$numbers
+     * @return float|int
+     */
+    static public function sub(...$numbers)
+    {
+        $value = array_shift($numbers);
+
+        foreach ($numbers as $number) {
+            $value -= $number;
+        }
+
+        return $value;
+    }
+
 }
