@@ -11,7 +11,7 @@
     ],
     "require-dev": {
         "phpunit/phpunit": "^7.4",
-        "victorjonsson/markdowndocs": "^1.3"
+        "cvuorinen/phpdoc-markdown-public": "^0.2.0"
     },
     "require": {},
     "autoload": {
