@@ -41,4 +41,15 @@ trait Shortcut
         return Operation::multiply(...$numbers);
     }
 
+    /**
+     * @see Operation::divide()
+     * @param float|int $a
+     * @param float|int $b
+     * @return float|int
+     */
+    static public function div($a, $b)
+    {
+        return Operation::divide($a, $b);
+    }
+
 }

@@ -62,4 +62,16 @@ trait Operation
         return $value;
     }
 
+    /**
+     * Divide the first term by the second
+     *
+     * @param float|int $a
+     * @param float|int $b
+     * @return float|int
+     */
+    static public function divide($a, $b)
+    {
+        return $a / $b;
+    }
+
 }
