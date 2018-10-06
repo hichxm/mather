@@ -1,6 +1,7 @@
 <?php
 
 
+use Hichxm\Mather\Exceptions\DivisionByZeroException;
 use Hichxm\Mather\Mather;
 
 class MatherOperationTest extends \PHPUnit\Framework\TestCase
@@ -83,13 +84,20 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
 
             /* Float */
             [-22.5, 45, -2],
-            [81.4, 814, 10]
+            [81.4, 814, 10],
+
+            /* DivisionBy0 */
+            [45, 485, 0]
         ];
 
         foreach ($arrayOfNumbers as $numbers) {
-            $sum = Mather::div($numbers[1], $numbers[2]);
 
-            $this->assertSame($numbers[0], $sum);
+            try {
+                $sum = Mather::div($numbers[1], $numbers[2]);
+                $this->assertSame($numbers[0], $sum);
+            } catch (DivisionByZeroException $e) {
+                $this->assertInstanceOf(DivisionByZeroException::class, $e);
+            }
         }
 
     }
