@@ -53,4 +53,15 @@ trait Shortcut
         return Operation::divide($a, $b);
     }
 
+    /**
+     * @see Operation::power()
+     * @param $base
+     * @param $exp
+     * @return float|int
+     */
+    static public function pow($base, $exp)
+    {
+        return Operation::power($base, $exp);
+    }
+
 }

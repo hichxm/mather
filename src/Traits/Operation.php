@@ -82,4 +82,16 @@ trait Operation
         return $a / $b;
     }
 
+    /**
+     * Return a number to the power x
+     *
+     * @param int|float $base
+     * @param int|float $exp
+     * @return float|int
+     */
+    static public function power($base, $exp)
+    {
+        return $base ** $exp;
+    }
+
 }
