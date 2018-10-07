@@ -18,7 +18,7 @@ class PythagorasRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new PythagorasRule($arrayOfNumber[0], $arrayOfNumber[1], $arrayOfNumber[2]);
-            $this->assertSame(round($rule->getHypotenuseFromAdjacentAndOpposite(), 2), $arrayOfNumber[3]);
+            $this->assertSame(round($rule->getHypotenuse(), 2), $arrayOfNumber[3]);
         }
 
     }
@@ -34,7 +34,7 @@ class PythagorasRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new PythagorasRule($arrayOfNumber[0], $arrayOfNumber[1], $arrayOfNumber[2]);
-            $this->assertSame(round($rule->getAdjacentFromHypotenuseAndOpposite(), 2), $arrayOfNumber[3]);
+            $this->assertSame(round($rule->getAdjacent(), 2), $arrayOfNumber[3]);
         }
 
     }
@@ -50,7 +50,7 @@ class PythagorasRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new PythagorasRule($arrayOfNumber[0], $arrayOfNumber[1], $arrayOfNumber[2]);
-            $this->assertSame(round($rule->getOppositeFromHypotenuseAndAdjacent(), 2), $arrayOfNumber[3]);
+            $this->assertSame(round($rule->getOpposite(), 2), $arrayOfNumber[3]);
         }
 
     }

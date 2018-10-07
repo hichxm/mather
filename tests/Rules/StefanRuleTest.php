@@ -18,7 +18,7 @@ class StefanRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new StefanRule($arrayOfNumber[1], $arrayOfNumber[2], $arrayOfNumber[3], $arrayOfNumber[0]);
-            $this->assertSame(round($rule->getPowerFromAreaTemperatureAndStefanConstant(), 3), $arrayOfNumber[4]);
+            $this->assertSame(round($rule->getPower(), 3), $arrayOfNumber[4]);
         }
     }
 
@@ -32,7 +32,7 @@ class StefanRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new StefanRule($arrayOfNumber[1], $arrayOfNumber[2], $arrayOfNumber[3], $arrayOfNumber[0]);
-            $this->assertSame(round($rule->getStefanConstantFromAreaTemperatureAndPower(), 3), $arrayOfNumber[4]);
+            $this->assertSame(round($rule->getStefanConstant(), 3), $arrayOfNumber[4]);
         }
     }
 
@@ -49,7 +49,7 @@ class StefanRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new StefanRule($arrayOfNumber[1], $arrayOfNumber[2], $arrayOfNumber[3], $arrayOfNumber[0]);
-            $this->assertSame(round($rule->getTemperatureSquaredTwoTimesFromPowerAreaAndStefanConstant(), 3), $arrayOfNumber[4]);
+            $this->assertSame(round($rule->getTemperatureSquared(), 3), $arrayOfNumber[4]);
         }
     }
 
@@ -66,7 +66,7 @@ class StefanRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new StefanRule($arrayOfNumber[1], $arrayOfNumber[2], $arrayOfNumber[3], $arrayOfNumber[0]);
-            $this->assertSame(round($rule->getAreaFromStefanConstantTemperatureAndPower(), 3), $arrayOfNumber[4]);
+            $this->assertSame(round($rule->getArea(), 3), $arrayOfNumber[4]);
         }
     }
 
@@ -83,7 +83,7 @@ class StefanRuleTest extends TestCase
 
         foreach ($arrayOfNumbers as $arrayOfNumber) {
             $rule = new StefanRule($arrayOfNumber[1], $arrayOfNumber[2], $arrayOfNumber[3], $arrayOfNumber[0]);
-            $this->assertSame(round($rule->getTemperatureFromPowerAreaAndStefanConstant(), 3), $arrayOfNumber[4]);
+            $this->assertSame(round($rule->getTemperature(), 3), $arrayOfNumber[4]);
         }
     }
 
