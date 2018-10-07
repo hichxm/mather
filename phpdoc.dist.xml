@@ -5,7 +5,7 @@
         <target>docs</target>
     </transformer>
     <transformations>
-        <template name="vendor/cvuorinen/phpdoc-markdown-public/data/templates/markdown-public" />
+        <template name="responsive" />
     </transformations>
     <files>
         <directory>src</directory>
