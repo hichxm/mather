@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="Mather" version="2.8.5">
+  <partials/>
+  <file path="Exceptions\DivisionByZeroException.php" generated-path="Exceptions.DivisionByZeroException.html" hash="e5b2ce1c23992ce02178468c6832eab6" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="Hichxm\Mather\Exceptions" line="11" package="Hichxm\Mather\Exceptions">
+      <extends>\Exception</extends>
+      <name>DivisionByZeroException</name>
+      <full_name>\Hichxm\Mather\Exceptions\DivisionByZeroException</full_name>
+      <docblock line="11">
+        <description>Class DivisionByZeroException</description>
+        <long-description></long-description>
+        <tag name="package" line="11" description="Hichxm\Mather\Exceptions"/>
+      </docblock>
+      <property static="false" visibility="protected" namespace="Hichxm\Mather\Exceptions" line="14" package="Hichxm\Mather\Exceptions">
+        <name>$message</name>
+        <full_name>\Hichxm\Mather\Exceptions\DivisionByZeroException::message</full_name>
+        <default>"You can't divide number by 0"</default>
+        <docblock line="14">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="14" code="PPC:ERR-50007">No summary for property $message</error>
+    </parse_markers>
+    <source>eJx9j8sKwjAQRfeF/sOlCEI3da+i+AA3foDSTZoMNmiTkKSSIv67SQVxozPLOZy5d7EyrcmztIp15AzjhIPkbejqI/Mt2XofOBkvtXLzN1iVZZ6hxPbGnMNO3qWL181wJqs/8Eiso+7KLr+NiaryjP8zgYInJRzqL/kjBUEcY7Un7klgEuO79GyJ4qR7cKamHiJKBUH1XUMWzYBZMdZ4vgCDu1Cj</source>
+  </file>
+  <file path="Mather.php" generated-path="Mather.html" hash="5e94c9b4771900be795c3783948583fe" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Constant">\Hichxm\Mather\Traits\Constant</namespace-alias>
+    <namespace-alias name="Operation">\Hichxm\Mather\Traits\Operation</namespace-alias>
+    <namespace-alias name="Shortcut">\Hichxm\Mather\Traits\Shortcut</namespace-alias>
+    <class final="false" abstract="false" namespace="Hichxm\Mather" line="16" package="Hichxm\Mather">
+      <extends/>
+      <name>Mather</name>
+      <full_name>\Hichxm\Mather\Mather</full_name>
+      <docblock line="16">
+        <description>Class Mather</description>
+        <long-description></long-description>
+        <tag name="package" line="16" description="Hichxm\Mather"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="23" package="Hichxm\Mather\Traits">
+        <name>total</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::total()</full_name>
+        <docblock line="23">
+          <description>Sum all the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="23" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="23" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Operation</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="40" package="Hichxm\Mather\Traits">
+        <name>subtract</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::subtract()</full_name>
+        <docblock line="40">
+          <description>Sum all the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="40" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="40" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Operation</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="57" package="Hichxm\Mather\Traits">
+        <name>multiply</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::multiply()</full_name>
+        <docblock line="57">
+          <description>Multiply the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="57" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="57" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Operation</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="76" package="Hichxm\Mather\Traits">
+        <name>divide</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::divide()</full_name>
+        <docblock line="76">
+          <description>Divide the first term by the second</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="" type="float|integer" variable="$a">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="76" description="" type="float|integer" variable="$b">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="76" description="" type="\Hichxm\Mather\Exceptions\DivisionByZeroException">
+            <type>\Hichxm\Mather\Exceptions\DivisionByZeroException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Operation</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="92" package="Hichxm\Mather\Traits">
+        <name>power</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::power()</full_name>
+        <docblock line="92">
+          <description>Return a number to the power x</description>
+          <long-description></long-description>
+          <tag name="param" line="92" description="" type="integer|float" variable="$base">
+            <type>integer</type>
+            <type>float</type>
+          </tag>
+          <tag name="param" line="92" description="" type="integer|float" variable="$exp">
+            <type>integer</type>
+            <type>float</type>
+          </tag>
+          <tag name="return" line="92" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$base</name>
+          <default></default>
+          <type>integer|float</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$exp</name>
+          <default></default>
+          <type>integer|float</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Operation</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="19" package="Hichxm\Mather\Traits">
+        <name>sum</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::sum()</full_name>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="19" description="" link="\Hichxm\Mather\Traits\Operation::total()"/>
+          <tag name="param" line="19" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="19" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Shortcut</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="29" package="Hichxm\Mather\Traits">
+        <name>sub</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::sub()</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="29" description="" link="\Hichxm\Mather\Traits\Operation::sub()"/>
+          <tag name="param" line="29" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="29" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Shortcut</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="39" package="Hichxm\Mather\Traits">
+        <name>mul</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::mul()</full_name>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="39" description="" link="\Hichxm\Mather\Traits\Operation::multiply()"/>
+          <tag name="param" line="39" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="39" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Shortcut</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="51" package="Hichxm\Mather\Traits">
+        <name>div</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::div()</full_name>
+        <docblock line="51">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="51" description="" link="\Hichxm\Mather\Traits\Operation::divide()"/>
+          <tag name="param" line="51" description="" type="float|integer" variable="$a">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="51" description="" type="float|integer" variable="$b">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="51" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="51" description="" type="\Hichxm\Mather\Exceptions\DivisionByZeroException">
+            <type>\Hichxm\Mather\Exceptions\DivisionByZeroException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Shortcut</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="62" package="Hichxm\Mather\Traits">
+        <name>pow</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::pow()</full_name>
+        <docblock line="62">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="62" description="" link="\Hichxm\Mather\Traits\Operation::power()"/>
+          <tag name="param" line="62" description="" type="" variable="$base"/>
+          <tag name="param" line="62" description="" type="" variable="$exp"/>
+          <tag name="return" line="62" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$base</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$exp</name>
+          <default></default>
+          <type/>
+        </argument>
+        <inherited_from>\Hichxm\Mather\Traits\Shortcut</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="18" package="Hichxm\Mather\Traits">
+        <name>PI</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::PI()</full_name>
+        <docblock line="18">
+          <description>Returns the value of PI</description>
+          <long-description></long-description>
+          <tag name="return" line="18" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+        <inherited_from>\Hichxm\Mather\Traits\Constant</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="27" package="Hichxm\Mather\Traits">
+        <name>PLANCK</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::PLANCK()</full_name>
+        <docblock line="27">
+          <description>Returns the value of PLANCK constant (J/s)</description>
+          <long-description></long-description>
+          <tag name="return" line="27" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+        <inherited_from>\Hichxm\Mather\Traits\Constant</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="36" package="Hichxm\Mather\Traits">
+        <name>LIGHT_SPEED</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::LIGHT_SPEED()</full_name>
+        <docblock line="36">
+          <description>Returns the value of LIGHT SPEED constant (m/s)</description>
+          <long-description></long-description>
+          <tag name="return" line="36" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <inherited_from>\Hichxm\Mather\Traits\Constant</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="45" package="Hichxm\Mather\Traits">
+        <name>MEISSEL_MERTENS</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::MEISSEL_MERTENS()</full_name>
+        <docblock line="45">
+          <description>Returns the value of MEISSEL MERTENS constant</description>
+          <long-description></long-description>
+          <tag name="return" line="45" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+        <inherited_from>\Hichxm\Mather\Traits\Constant</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather" line="54" package="Hichxm\Mather\Traits">
+        <name>STEFAN_BOLTZMANN</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::STEFAN_BOLTZMANN()</full_name>
+        <docblock line="54">
+          <description>Returns the value of STEFAN BOLTZMANN constant (kg/s^3/K^4)</description>
+          <long-description></long-description>
+          <tag name="return" line="54" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+        <inherited_from>\Hichxm\Mather\Traits\Constant</inherited_from>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJx9kM8OgjAMxu8kvEPPxMgDYKKRiweNBz1yaUaVRdiWbfgnxneXMUgAiV2yLO3X3752tVaFCgN3BFZkFDKCHWfFs8oOaAvSia/WZpLPzhq5NVkqhbEobPJHc1Sk0XIp/olOhdSW1bb7MI6iMIAI0hKNAS9tE5vG4w2vE4orxWHARuq3A0ETHuYigi0azkD2lhZwJ/2CB5Ul5JLVFQlL+bKXx/7hXA+n+MX29kFegBxyhjAacQrYy7a3ct6bizMDrNvtDGqw9jD4fAHaDILh</source>
+  </file>
+  <file path="Traits\Constant.php" generated-path="Traits.Constant.html" hash="c7a02ba6428500f246357d30b354ec2b" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <trait namespace="Hichxm\Mather\Traits" line="11" package="Hichxm\Mather\Traits">
+      <name>Constant</name>
+      <full_name>\Hichxm\Mather\Traits\Constant</full_name>
+      <docblock line="11">
+        <description>Trait Constant</description>
+        <long-description></long-description>
+        <tag name="package" line="11" description="Hichxm\Mather\Traits"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="18" package="Hichxm\Mather\Traits">
+        <name>PI</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::PI()</full_name>
+        <docblock line="18">
+          <description>Returns the value of PI</description>
+          <long-description></long-description>
+          <tag name="return" line="18" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="27" package="Hichxm\Mather\Traits">
+        <name>PLANCK</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::PLANCK()</full_name>
+        <docblock line="27">
+          <description>Returns the value of PLANCK constant (J/s)</description>
+          <long-description></long-description>
+          <tag name="return" line="27" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="36" package="Hichxm\Mather\Traits">
+        <name>LIGHT_SPEED</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::LIGHT_SPEED()</full_name>
+        <docblock line="36">
+          <description>Returns the value of LIGHT SPEED constant (m/s)</description>
+          <long-description></long-description>
+          <tag name="return" line="36" description="" type="integer">
+            <type>integer</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="45" package="Hichxm\Mather\Traits">
+        <name>MEISSEL_MERTENS</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::MEISSEL_MERTENS()</full_name>
+        <docblock line="45">
+          <description>Returns the value of MEISSEL MERTENS constant</description>
+          <long-description></long-description>
+          <tag name="return" line="45" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="54" package="Hichxm\Mather\Traits">
+        <name>STEFAN_BOLTZMANN</name>
+        <full_name>\Hichxm\Mather\Traits\Constant::STEFAN_BOLTZMANN()</full_name>
+        <docblock line="54">
+          <description>Returns the value of STEFAN BOLTZMANN constant (kg/s^3/K^4)</description>
+          <long-description></long-description>
+          <tag name="return" line="54" description="" type="float">
+            <type>float</type>
+          </tag>
+        </docblock>
+      </method>
+    </trait>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJylUk1vgkAQvZv4H+aopBWEZYHapNqWVipQI5waI6EElahAZGmbGP97l48S2pqocfawm9l5b97bndu7eBk3G9kK3Y2fxK7nwzDwll+bqeGSpb+d2ls3IEmvKGIZptkABvIkPERhQtyQ5Kk+xa7cxWF4VsE2G+QPbJdxAo2CNwsGJj5Jt2ECFA4f7jr1IZrDWKvu+9u8AObryCU/WbY4UF4SeBCn72u6zdPQI0EUUnSrfVMH7EocjZLNcMZar8juT1elD8yHEXilIWi9sEn7IqE54VGxuIN5zEkch2ibOPpsdbkruBZQ+2wHuvY8tMEaq+pjzcbmkI0gPNFEzunknJmTCvffB68oksIjUT5bt6FqlqXqdJ/YqmlV2i95/JLTKTmP/gLX4XEXKRLf5WUkYcRLsiCJIuKxLMiYk7EiyqJytjXLVp8GJty/6vabMTDN2r+sFmwyE9jRDF00ZUUHp+pw1KnYwRInYKk+bfKvYdt/A71QHes=</source>
+  </file>
+  <file path="Traits\Operation.php" generated-path="Traits.Operation.html" hash="e9a15b4bac678f37eec8251e68086da0" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="DivisionByZeroException">\Hichxm\Mather\Exceptions\DivisionByZeroException</namespace-alias>
+    <trait namespace="Hichxm\Mather\Traits" line="14" package="Hichxm\Mather\Traits">
+      <name>Operation</name>
+      <full_name>\Hichxm\Mather\Traits\Operation</full_name>
+      <docblock line="14">
+        <description>Trait Operation</description>
+        <long-description></long-description>
+        <tag name="package" line="14" description="Hichxm\Mather\Traits"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="23" package="Hichxm\Mather\Traits">
+        <name>total</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::total()</full_name>
+        <docblock line="23">
+          <description>Sum all the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="23" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="23" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="40" package="Hichxm\Mather\Traits">
+        <name>subtract</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::subtract()</full_name>
+        <docblock line="40">
+          <description>Sum all the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="40" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="40" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="57" package="Hichxm\Mather\Traits">
+        <name>multiply</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::multiply()</full_name>
+        <docblock line="57">
+          <description>Multiply the numbers between them</description>
+          <long-description></long-description>
+          <tag name="param" line="57" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="57" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="76" package="Hichxm\Mather\Traits">
+        <name>divide</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::divide()</full_name>
+        <docblock line="76">
+          <description>Divide the first term by the second</description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="" type="float|integer" variable="$a">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="76" description="" type="float|integer" variable="$b">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="76" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="76" description="" type="\Hichxm\Mather\Exceptions\DivisionByZeroException">
+            <type>\Hichxm\Mather\Exceptions\DivisionByZeroException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="92" package="Hichxm\Mather\Traits">
+        <name>power</name>
+        <full_name>\Hichxm\Mather\Traits\Operation::power()</full_name>
+        <docblock line="92">
+          <description>Return a number to the power x</description>
+          <long-description></long-description>
+          <tag name="param" line="92" description="" type="integer|float" variable="$base">
+            <type>integer</type>
+            <type>float</type>
+          </tag>
+          <tag name="param" line="92" description="" type="integer|float" variable="$exp">
+            <type>integer</type>
+            <type>float</type>
+          </tag>
+          <tag name="return" line="92" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$base</name>
+          <default></default>
+          <type>integer|float</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$exp</name>
+          <default></default>
+          <type>integer|float</type>
+        </argument>
+      </method>
+    </trait>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+    <source>eJzNlMFq4zAQhu+BvMMccnC8bbL3rNlSWuilFHb3tASWsTOuRW1ZSKMmoc27ryTbiWmapNBCqxwie/75Z+az0I+fqlDDgf9JrMgozAhuRFasqvktckF6/kejYDNrRNa8DF+vMlIsamnmV+JRGLe7XP8lXW8Dbeo0jocDiCH4wZ0ijT4a3l24ug94/3ppr5gOB/wy78m7gluNs18x/LYVYFmCywdpq5S0gZR4SST9u6oTbhNcaY0V5GWN/Cwkw2QyGbWZO5EmtlruVF1k2mwMu54yUDYt3V9uZeZbBK4Zy6hnOG7kT226W6NHLC1BAqg1rv+ZQuQcbeWzbkS/8loTZgVsw4AG2v2479nz/ZZ0itkuvum7tpM1+la0+fJkjU3decj4U+GefxzcW1uyUOX6a9Ct2m4+lW7SbeIPo+wvqAUFxrnQhoFJV5A21A1ltVyc5jzCI7H0NHq44ELXSwMHrsu3faJFGCUa4Zkruv9tRO5Yp5Ak8H2PbygPkpaHOojGp0gjTF3ZY6h/NUpsD7O7CgNkVS/dw+oQZYfpOQBz7mjoSJhW6r2nPPQShUJnwXAfYzev10AcB1V/6s1/6nn6/Q==</source>
+  </file>
+  <file path="Traits\Shortcut.php" generated-path="Traits.Shortcut.html" hash="d3cbaaef108908837d74c9d00c709ac7" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <trait namespace="Hichxm\Mather\Traits" line="11" package="Hichxm\Mather\Traits">
+      <name>Shortcut</name>
+      <full_name>\Hichxm\Mather\Traits\Shortcut</full_name>
+      <docblock line="11">
+        <description>Trait Shortcut</description>
+        <long-description></long-description>
+        <tag name="package" line="11" description="Hichxm\Mather\Traits"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="19" package="Hichxm\Mather\Traits">
+        <name>sum</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::sum()</full_name>
+        <docblock line="19">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="19" description="" link="\Hichxm\Mather\Traits\Operation::total()"/>
+          <tag name="param" line="19" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="19" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="29" package="Hichxm\Mather\Traits">
+        <name>sub</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::sub()</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="29" description="" link="\Hichxm\Mather\Traits\Operation::sub()"/>
+          <tag name="param" line="29" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="29" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="39" package="Hichxm\Mather\Traits">
+        <name>mul</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::mul()</full_name>
+        <docblock line="39">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="39" description="" link="\Hichxm\Mather\Traits\Operation::multiply()"/>
+          <tag name="param" line="39" description="" type="float|integer" variable="$numbers">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="39" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$numbers</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="51" package="Hichxm\Mather\Traits">
+        <name>div</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::div()</full_name>
+        <docblock line="51">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="51" description="" link="\Hichxm\Mather\Traits\Operation::divide()"/>
+          <tag name="param" line="51" description="" type="float|integer" variable="$a">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="51" description="" type="float|integer" variable="$b">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="return" line="51" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="51" description="" type="\Hichxm\Mather\Exceptions\DivisionByZeroException">
+            <type>\Hichxm\Mather\Exceptions\DivisionByZeroException</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type>float|integer</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="Hichxm\Mather\Traits" line="62" package="Hichxm\Mather\Traits">
+        <name>pow</name>
+        <full_name>\Hichxm\Mather\Traits\Shortcut::pow()</full_name>
+        <docblock line="62">
+          <description></description>
+          <long-description></long-description>
+          <tag name="see" line="62" description="" link="\Hichxm\Mather\Traits\Operation::power()"/>
+          <tag name="param" line="62" description="" type="" variable="$base"/>
+          <tag name="param" line="62" description="" type="" variable="$exp"/>
+          <tag name="return" line="62" description="" type="float|integer">
+            <type>float</type>
+            <type>integer</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$base</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$exp</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </trait>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="19" code="PPC:ERR-50008">No summary for method sum()</error>
+      <error line="29" code="PPC:ERR-50008">No summary for method sub()</error>
+      <error line="39" code="PPC:ERR-50008">No summary for method mul()</error>
+      <error line="51" code="PPC:ERR-50008">No summary for method div()</error>
+      <error line="62" code="PPC:ERR-50008">No summary for method pow()</error>
+    </parse_markers>
+    <source>eJy9k01PwkAQhu8k/Ic99FAbAncwkRhNvBgPejK9TJeBbmy7m91ZgSD/3emHUMVgwYTtoZuded+ZZ9q9vjGp6ffKp4AcnQGJ4kHJdJXHj0Ap2vjFgiI3qZNGUdTviUhUh+I51Zakp+poyto3WPwuLzNG/R79kG1KT8Gr9i0XGzlE8WTQAildjMekCbLwah83YCEX80wDfaiCxHA4DAqfJ2jdPskieVvss74io3rjiN2lMD7J+DX3hSyLCefzsGXXFN00Yl6N7UF7bdGkTt92gXM+uRhacioaS/iLSTqbLvcZKZOtL4TI5U5F3HV4LuJMvasZHgMM4Egs+ZtZTCm1eulE/P1m3a8kmrIJF99xE453t+tXtHoX6DY1JggDGHAvXQbW8DaCUyZl9BLt4aCCBBweHOLK/Pdv4HphZT6o7LrA1S22RW3A7SfkWXZD</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="Hichxm" full_name="Hichxm">
+    <package name="Mather" full_name="Hichxm\Mather">
+      <package name="Exceptions" full_name="Hichxm\Mather\Exceptions"/>
+      <package name="Traits" full_name="Hichxm\Mather\Traits"/>
+    </package>
+  </package>
+  <package name="global" full_name="global"/>
+  <namespace name="Hichxm" full_name="Hichxm">
+    <namespace name="Mather" full_name="Hichxm\Mather">
+      <namespace name="Exceptions" full_name="Hichxm\Mather\Exceptions"/>
+      <namespace name="Traits" full_name="Hichxm\Mather\Traits"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>
