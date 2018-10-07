@@ -108,4 +108,49 @@ class StefanRule
         return $temperature;
     }
 
+    /**
+     * Return Power (Watts) from Area, Temperature and Stefan constant
+     * @return float
+     */
+    public function getPower(): float
+    {
+        return $this->getPowerFromAreaTemperatureAndStefanConstant();
+    }
+
+    /**
+     * Return Area (m²) from Power, Temperature and Stefan constant
+     * @return float
+     */
+    public function getArea(): float
+    {
+        return $this->getAreaFromStefanConstantTemperatureAndPower();
+    }
+
+    /**
+     * Get Temperature (K⁴) from Power, Area and Stefan constant
+     * @return float
+     */
+    public function getTemperature(): float
+    {
+        return $this->getTemperatureFromPowerAreaAndStefanConstant();
+    }
+
+    /**
+     * Return Stefan constant (W/m²/K⁴) from Area, Temperature and Power
+     * @return float
+     */
+    public function getStefanConstant(): float
+    {
+        return $this->getStefanConstantFromAreaTemperatureAndPower();
+    }
+
+    /**
+     * Get Temperature (K) from Power, Area and Stefan constant
+     * @return float
+     */
+    public function getTemperatureSquared(): float
+    {
+        return $this->getTemperatureSquaredTwoTimesFromPowerAreaAndStefanConstant();
+    }
+
 }
