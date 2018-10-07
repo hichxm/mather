@@ -102,4 +102,26 @@ class MatherOperationTest extends \PHPUnit\Framework\TestCase
 
     }
 
+    /** @test */
+    public function check_if_power_function_work()
+    {
+
+        $arrayOfNumbers =  [
+            /* Integer */
+            [50, 100, 7.88860905221012E+169],
+            [-20, 40, 1.099511627776E+52],
+
+            /* Float */
+            [-22.5, 45, -7.05039282284307E+60],
+            [81.4, 814, INF],
+        ];
+
+        foreach ($arrayOfNumbers as $arrayOfNumber) {
+            $pow = Mather::pow($arrayOfNumber[0], $arrayOfNumber[1]);
+
+            $this->assertSame($pow, $arrayOfNumber[2]);
+        }
+
+    }
+
 }
