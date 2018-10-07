@@ -6,6 +6,7 @@ namespace Hichxm\Mather;
 
 use Hichxm\Mather\Traits\Constant;
 use Hichxm\Mather\Traits\Operation;
+use Hichxm\Mather\Traits\Rule;
 use Hichxm\Mather\Traits\Shortcut;
 
 
@@ -30,5 +31,10 @@ class Mather
      * Lot of mathematics constant
      */
     use Constant;
+
+    /**
+     * Shortcut for rules
+     */
+    use Rule;
 
 }
