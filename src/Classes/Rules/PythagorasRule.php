@@ -100,4 +100,28 @@ class PythagorasRule
         return $this->getHypotenuseFromAdjacentAndOpposite();
     }
 
+    /**
+     * @param float $hypotenuse
+     */
+    public function setHypotenuse(float $hypotenuse): void
+    {
+        $this->hypotenuse = $hypotenuse;
+    }
+
+    /**
+     * @param float $adjacent
+     */
+    public function setAdjacent(float $adjacent): void
+    {
+        $this->adjacent = $adjacent;
+    }
+
+    /**
+     * @param float $opposite
+     */
+    public function setOpposite(float $opposite): void
+    {
+        $this->opposite = $opposite;
+    }
+
 }

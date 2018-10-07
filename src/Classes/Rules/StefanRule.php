@@ -153,4 +153,36 @@ class StefanRule
         return $this->getTemperatureSquaredTwoTimesFromPowerAreaAndStefanConstant();
     }
 
+    /**
+     * @param float $stefan
+     */
+    public function setStefan(float $stefan): void
+    {
+        $this->stefan = $stefan;
+    }
+
+    /**
+     * @param float $power
+     */
+    public function setPower(float $power): void
+    {
+        $this->power = $power;
+    }
+
+    /**
+     * @param float $temperature
+     */
+    public function setTemperature(float $temperature): void
+    {
+        $this->temperature = $temperature;
+    }
+
+    /**
+     * @param float $area
+     */
+    public function setArea(float $area): void
+    {
+        $this->area = $area;
+    }
+
 }
