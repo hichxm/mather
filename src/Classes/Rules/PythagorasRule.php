@@ -73,4 +73,31 @@ class PythagorasRule
         return $opposite;
     }
 
+    /**
+     * Return Opposite from Hypotenuse and Adjacent
+     * @return float
+     */
+    public function getOpposite(): float
+    {
+        return $this->getOppositeFromHypotenuseAndAdjacent();
+    }
+
+    /**
+     * Return Adjacent from Hypotenuse and Opposite
+     * @return float
+     */
+    public function getAdjacent(): float
+    {
+        return $this->getAdjacentFromHypotenuseAndOpposite();
+    }
+
+    /**
+     * Return Hypotenuse from Adjacent and Opposite
+     * @return float
+     */
+    public function getHypotenuse()
+    {
+        return $this->getHypotenuseFromAdjacentAndOpposite();
+    }
+
 }
