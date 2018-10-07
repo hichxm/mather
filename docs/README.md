@@ -8,10 +8,12 @@
     * [subtract](#subtract)
     * [multiply](#multiply)
     * [divide](#divide)
+    * [power](#power)
     * [sum](#sum)
     * [sub](#sub)
     * [mul](#mul)
     * [div](#div)
+    * [pow](#pow)
     * [PI](#pi)
     * [PLANCK](#planck)
     * [LIGHT_SPEED](#light_speed)
@@ -126,6 +128,29 @@ Mather::divide( float|integer $a, float|integer $b ): float|integer
 
 ---
 
+### power
+
+Return a number to the power x
+
+```php
+Mather::power( integer|float $base, integer|float $exp ): float|integer
+```
+
+
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$base` | **integer&#124;float** |  |
+| `$exp` | **integer&#124;float** |  |
+
+
+
+
+---
+
 ### sum
 
 
@@ -227,6 +252,32 @@ Mather::div( float|integer $a, float|integer $b ): float|integer
 
 ---
 
+### pow
+
+
+
+```php
+Mather::pow(  $base,  $exp ): float|integer
+```
+
+
+
+* This method is **static**.
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$base` | **** |  |
+| `$exp` | **** |  |
+
+
+
+**See Also:**
+
+* \Hichxm\Mather\Traits\Operation::power() 
+
+---
+
 ### PI
 
 Returns the value of PI
@@ -310,4 +361,4 @@ Mather::STEFAN_BOLTZMANN(  ): float
 
 
 --------
-> This document was automatically generated from source code comments on 2018-10-06 using [phpDocumentor](http://www.phpdoc.org/) and [cvuorinen/phpdoc-markdown-public](https://github.com/cvuorinen/phpdoc-markdown-public)
+> This document was automatically generated from source code comments on 2018-10-07 using [phpDocumentor](http://www.phpdoc.org/) and [cvuorinen/phpdoc-markdown-public](https://github.com/cvuorinen/phpdoc-markdown-public)
