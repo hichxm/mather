@@ -109,7 +109,7 @@ class StefanRule
     }
 
     /**
-     * Return Power (Watts) from Area, Temperature and Stefan constant
+     * Return Power (W) from Area, Temperature and Stefan constant
      * @return float
      */
     public function getPower(): float
